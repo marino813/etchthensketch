@@ -1,0 +1,151 @@
+body {
+    font-family: 'Leckerli One', cursive;
+    margin: auto;
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #d9a84b;
+}
+
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+}
+
+.row {
+    flex: 1;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    border: 1px;
+}
+
+.etch-container {
+    display: grid;
+    padding-top: 1.6%;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-bottom: 3.2%;
+}
+
+.etch-item {
+    background-color: #A8A782;
+    padding: 50%;
+    text-align: center;
+}
+
+.mainColumn {
+    background-image: url("../imgs/etchFrame.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #A8A782;
+    background-size: cover;
+    padding-bottom: 0px;
+    padding-top: 14%;
+}
+
+.slidecontainer {
+    width: 50%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #DB381B;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #DB381B;
+    cursor: pointer;
+  }
+
+  .button {
+    background-color: #DB381B;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Leckerli One', cursive;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.shake {
+    animation: shake .5s;
+    animation-iteration-count: 2s;
+ }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#mainRow {
+    padding-top: 5%;
+}
+
+#knobRow {
+    padding-left: .5%;
+    padding-right: .5%;
+    padding-bottom: .5%;
+    justify-content: space-between;
+}
+
+#controller {
+    background-color: white;
+    justify-content: space-around;
+}

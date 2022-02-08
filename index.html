@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Etch A Sketch: Just like old times</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+        </style>
+</head>
+<body>
+<div class="column"><h1>Just like old times.</h1></div>
+<div class="row">
+<div class="column mainColumn">
+    <div class="etch-container" id="etcher"></div>
+    <div class="row" id="knobRow">
+    <img src="./imgs/knob.png" class="knobs" id="leftKnob" width="15%" height="15%">
+    <img src="./imgs/knob.png" class="knobs" id="rightKnob" width="15%" height="15%">
+    </div>
+</div>
+</div>
+<div class="column" id="controllerColumn">
+    <div class="row" id="controller">
+        <div class="slidecontainer">
+            <h3>Grid Size</h3>
+            <input type="range" min="10" max="110" value="60" step="10" class="slider" id="gridSetting">
+        </div>
+        <div>
+            <h3>Reset</h3>
+            <input type="button" class="button button2" id="resetButton" value="Shake Vigorously">
+        </div>
+    </div>
+</div>
+
+<script src="js/etch.js"></script>
+</body> 
+ 
+</html>
